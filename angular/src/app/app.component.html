@@ -1,0 +1,19 @@
+<main class="main-content">
+  <app-navigation-header></app-navigation-header>
+  <div class="project-container">
+    <div class="main-scrollbar-container">
+      <ng-scrollbar
+        track="all"
+        pointerEventsMethod="scrollbar"
+      >
+        <div scrollViewport class="page-with-footer">
+          <div class="page-container">
+            <router-outlet></router-outlet>
+          </div>
+          <app-footer></app-footer>
+        </div>
+      </ng-scrollbar>
+    </div>
+  </div>
+</main>
+
