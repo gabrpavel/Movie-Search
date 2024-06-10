@@ -1,11 +1,19 @@
 import { PreloadAllModules, RouterModule, Routes } from "@angular/router";
 import { NgModule } from "@angular/core";
-import { HomeComponent } from "./prod/components/home.component";
 
 const routes: Routes = [
   {
+    path: 'home',
+    loadChildren: () => import('./prod/prod.module').then(m => m.ProdModule)
+  },
+  {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
+  {
     path: '**',
-    redirectTo: ''
+    redirectTo: 'home'
   }
 ];
 

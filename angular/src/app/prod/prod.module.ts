@@ -2,12 +2,12 @@ import { NgModule } from "@angular/core";
 import { HomeComponent } from "./components/home.component";
 import { ProdRoutingModule } from "./prod-routing.module";
 import { CoreModule } from "../core/core.module";
-import { FooterComponent } from "../core/layouts/footer/footer.component";
+import { MovieSearchComponent } from "./components/movie-search/movie-search.component";
 
 @NgModule({
   declarations: [
     HomeComponent,
-    FooterComponent
+    MovieSearchComponent
   ],
   imports: [
     ProdRoutingModule,
@@ -15,9 +15,8 @@ import { FooterComponent } from "../core/layouts/footer/footer.component";
   ],
   providers: [],
   exports: [
-    CoreModule,
-    FooterComponent
+    CoreModule
   ]
 })
-export class ProdModule{
+export class ProdModule {
 }

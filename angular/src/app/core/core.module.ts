@@ -2,10 +2,12 @@ import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { SharedModule } from "../shared/shared.module";
 import { NavigationHeaderComponent } from "./layouts/navigation-header/navigation-header.component";
+import { FooterComponent } from "./layouts/footer/footer.component";
 
 @NgModule({
   declarations: [
-    NavigationHeaderComponent
+    NavigationHeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -14,7 +16,8 @@ import { NavigationHeaderComponent } from "./layouts/navigation-header/navigatio
   providers: [],
   exports: [
     SharedModule,
-    NavigationHeaderComponent
+    NavigationHeaderComponent,
+    FooterComponent
   ]
 })
 export class CoreModule {
